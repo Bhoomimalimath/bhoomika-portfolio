@@ -1,708 +1,733 @@
 import "./App.css";
 
 function App() {
+  const githubUrl = "https://github.com/Bhoomimalimath";
+  const linkedinUrl =
+    "https://www.linkedin.com/in/bhoomika-sm-175655308/";
+  const leetcodeUrl = "https://leetcode.com/u/bhoomikamalimath/";
+  const email = "bhoomikasm0205@gmail.com";
+
+  const skills = [
+    "Java",
+    "C",
+    "Python",
+    "HTML",
+    "CSS",
+    "React.js",
+    "Spring Boot",
+    "FastAPI",
+    "SQL",
+    "PostgreSQL",
+    "Machine Learning",
+    "Scikit-learn",
+  ];
+
+  const projects = [
+    {
+      number: "01",
+      title: "AgriSmart",
+      category: "AI / ML • Full Stack",
+      description:
+        "An AI/ML-based smart farming and agricultural decision support platform that helps farmers with crop recommendations, weather insights, mandi price analysis, MSP comparison, price prediction, and profit estimation.",
+      technologies: [
+        "React.js",
+        "FastAPI",
+        "Python",
+        "PostgreSQL",
+        "Scikit-learn",
+      ],
+    },
+    {
+      number: "02",
+      title: "Microservices Authentication System",
+      category: "Backend • Security",
+      description:
+        "A secure microservices authentication system implementing JWT authentication, role-based access control, QR login, token validation, and Redis-based session management.",
+      technologies: [
+        "Java",
+        "Spring Boot",
+        "Spring Security",
+        "JWT",
+        "Redis",
+      ],
+    },
+    {
+      number: "03",
+      title: "Education Suggestion Website",
+      category: "Web Development",
+      description:
+        "A web application that provides degree, college, and career guidance to students after 2nd PUC based on their interests and academic background.",
+      technologies: [
+        "AngularJS",
+        "Spring Boot",
+        "Java",
+        "PostgreSQL",
+      ],
+    },
+    {
+      number: "04",
+      title: "AgriSense",
+      category: "AI / ML",
+      description:
+        "An AI-powered agriculture application for crop disease detection and fertilizer recommendation using machine learning techniques.",
+      technologies: [
+        "React.js",
+        "FastAPI",
+        "Python",
+        "Machine Learning",
+      ],
+    },
+  ];
+
+  const certifications = [
+    {
+      title:
+        "Top 100 Finalist – Capgemini Exceller AgentifAI Buildathon",
+      year: "2026",
+    },
+    {
+      title:
+        "SAP Certified – Data Analyst – SAP Analytics Cloud",
+      year: "2026",
+    },
+    {
+      title:
+        "Database Structures and Management with MySQL – Meta",
+      year: "2025",
+      subtitle: "Coursera",
+    },
+    {
+      title: "Generative AI Landscape – Infosys Springboard",
+      year: "2026",
+    },
+    {
+      title: "Introduction to R – Infosys Springboard",
+      year: "2026",
+    },
+  ];
+
   return (
     <div className="portfolio">
 
       {/* ================= NAVBAR ================= */}
-      <nav className="navbar">
-        <div className="logo">Bhoomika SM</div>
+      <header className="navbar">
+        <div className="nav-container">
 
-        <div className="nav-links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#education">Education</a>
-          <a href="#certifications">Certifications</a>
-          <a href="#contact">Contact</a>
+          <a href="#home" className="logo">
+            <span className="logo-mark">B</span>
+            <span>Bhoomika<span className="logo-accent">.</span></span>
+          </a>
+
+          <nav className="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+          </nav>
+
+          <a
+            href={`mailto:${email}`}
+            className="nav-contact"
+          >
+            Let's Talk
+          </a>
+
         </div>
-      </nav>
-
+      </header>
 
       {/* ================= HERO ================= */}
-      <section id="home" className="hero">
+      <main>
 
-        <div className="hero-content">
+        <section id="home" className="hero">
+          <div className="hero-container">
 
-          <p className="hero-small-text">
-            HELLO, I'M
-          </p>
+            <div className="hero-content">
 
-          <h1>
-            Bhoomika <span>SM</span>
-          </h1>
+              <div className="eyebrow">
+                <span className="eyebrow-line"></span>
+                Hello, I'm
+              </div>
 
-          <h2>
-            Computer Science & Data Science Student
-          </h2>
+              <h1>
+                Bhoomika
+                <span> SM</span>
+              </h1>
 
-          <p className="hero-description">
-            Computer Science and Data Science student passionate about
-            software development, web technologies, databases and
-            Artificial Intelligence & Machine Learning.
-          </p>
+              <h2>
+                Computer Science &amp; Data Science Student
+              </h2>
 
-          <div className="hero-buttons">
+              <p className="hero-description">
+                I build practical software solutions using modern
+                technologies, data, and machine learning. Passionate
+                about turning ideas into useful digital products.
+              </p>
 
-            <a href="#projects" className="btn primary-btn">
-              View My Work
-            </a>
+              <div className="hero-actions">
 
-            <a href="/resume.pdf" target="_blank" className="btn secondary-btn">
-              View Resume
-            </a>
+                <a
+                  href="#projects"
+                  className="btn btn-primary"
+                >
+                  View My Work
+                  <span>↗</span>
+                </a>
+
+               
+
+              </div>
+
+              <div className="hero-socials">
+
+                <a
+                  href={`mailto:${email}`}
+                  className="social-link"
+                >
+                  <span className="social-icon">@</span>
+                  Email
+                </a>
+
+                <a
+                  href={linkedinUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-link"
+                >
+                  <span className="social-icon">in</span>
+                  LinkedIn
+                </a>
+
+                <a
+                  href={githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-link"
+                >
+                  <span className="social-icon">⌘</span>
+                  GitHub
+                </a>
+
+                <a
+                  href={leetcodeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-link"
+                >
+                  <span className="social-icon">&lt;/&gt;</span>
+                  LeetCode
+                </a>
+
+              </div>
+
+            </div>
+
+            {/* HERO PROFILE CARD */}
+            <div className="hero-visual">
+
+              <div className="hero-glow"></div>
+
+              <div className="profile-card">
+
+                <div className="profile-card-top">
+                  <span className="status-dot"></span>
+                  Available for opportunities
+                </div>
+
+                <div className="profile-avatar">
+                  BS
+                </div>
+
+                <h3>Bhoomika SM</h3>
+
+                <p>
+                  Developer • AI/ML Enthusiast
+                </p>
+
+                <div className="profile-divider"></div>
+
+                <div className="profile-stats">
+
+                  <div>
+                    <strong>12+</strong>
+                    <span>Skills</span>
+                  </div>
+
+                  <div>
+                    <strong>04</strong>
+                    <span>Projects</span>
+                  </div>
+
+                  <div>
+                    <strong>05</strong>
+                    <span>Certifications</span>
+                  </div>
+
+                </div>
+
+                <div className="profile-tech">
+                  <span>Java</span>
+                  <span>Python</span>
+                  <span>React</span>
+                  <span>ML</span>
+                </div>
+
+              </div>
+
+              <div className="floating-card floating-card-one">
+                <span>⌘</span>
+                <div>
+                  <strong>Software</strong>
+                  <small>Development</small>
+                </div>
+              </div>
+
+              <div className="floating-card floating-card-two">
+                <span>AI</span>
+                <div>
+                  <strong>Machine</strong>
+                  <small>Learning</small>
+                </div>
+              </div>
+
+            </div>
 
           </div>
 
-        </div>
-
-
-        <div className="hero-profile">
-
-          <div className="profile-circle">
-            BS
+          <div className="scroll-indicator">
+            <span></span>
+            Scroll to explore
           </div>
+        </section>
 
-          <h3>Bhoomika SM</h3>
+        {/* ================= ABOUT ================= */}
+        <section id="about" className="section about-section">
+          <div className="section-container">
+
+            <div className="section-header">
+              <span>01 — ABOUT</span>
+              <h2>
+                Turning ideas into
+                <em> useful solutions.</em>
+              </h2>
+            </div>
+
+            <div className="about-grid">
+
+              <div className="about-main">
+
+                <p className="about-lead">
+                  I am a Computer Science and Data Science student
+                  interested in software development, machine learning,
+                  databases, and modern web technologies.
+                </p>
+
+                <p>
+                  I enjoy building real-world applications that combine
+                  software engineering and intelligent technologies to
+                  solve practical problems. My projects range from
+                  full-stack web applications to AI-powered agricultural
+                  solutions.
+                </p>
+
+                <p>
+                  I am continuously improving my programming, problem
+                  solving, and development skills while exploring new
+                  technologies and building projects that have practical
+                  value.
+                </p>
+
+              </div>
+
+              <div className="about-side">
+
+                <div className="about-info">
+                  <span>01</span>
+                  <div>
+                    <strong>Software Development</strong>
+                    <p>
+                      Building scalable and practical applications.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="about-info">
+                  <span>02</span>
+                  <div>
+                    <strong>Data &amp; AI</strong>
+                    <p>
+                      Exploring machine learning and data-driven solutions.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="about-info">
+                  <span>03</span>
+                  <div>
+                    <strong>Continuous Learning</strong>
+                    <p>
+                      Improving through projects and problem solving.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+
+        {/* ================= SKILLS ================= */}
+        <section id="skills" className="section skills-section">
+          <div className="section-container">
+
+            <div className="section-header">
+              <span>02 — SKILLS</span>
+              <h2>
+                Tools I use to
+                <em> build things.</em>
+              </h2>
+            </div>
+
+            <div className="skills-grid">
+
+              {skills.map((skill, index) => (
+                <div
+                  className="skill-card"
+                  key={skill}
+                >
+                  <span className="skill-number">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+
+                  <span className="skill-name">
+                    {skill}
+                  </span>
+
+                  <span className="skill-arrow">
+                    ↗
+                  </span>
+                </div>
+              ))}
+
+            </div>
+
+          </div>
+        </section>
+
+        {/* ================= PROJECTS ================= */}
+        <section id="projects" className="section projects-section">
+          <div className="section-container">
+
+            <div className="section-header projects-header">
+
+              <div>
+                <span>03 — PROJECTS</span>
+                <h2>
+                  Things I've
+                  <em> built.</em>
+                </h2>
+              </div>
+
+              <p>
+                A selection of projects that showcase my
+                development and problem-solving skills.
+              </p>
+
+            </div>
+
+            <div className="projects-list">
+
+              {projects.map((project) => (
+                <article
+                  className="project-card"
+                  key={project.number}
+                >
+
+                  <div className="project-top">
+                    <span className="project-number">
+                      {project.number}
+                    </span>
+
+                    <span className="project-category">
+                      {project.category}
+                    </span>
+
+                    <span className="project-arrow">
+                      ↗
+                    </span>
+                  </div>
+
+                  <div className="project-content">
+
+                    <h3>
+                      {project.title}
+                    </h3>
+
+                    <p>
+                      {project.description}
+                    </p>
+
+                    <div className="technology-list">
+
+                      {project.technologies.map((tech) => (
+                        <span key={tech}>
+                          {tech}
+                        </span>
+                      ))}
+
+                    </div>
+
+                  </div>
+
+                </article>
+              ))}
+
+            </div>
+
+          </div>
+        </section>
+
+        {/* ================= EDUCATION ================= */}
+        <section id="education" className="section education-section">
+          <div className="section-container">
+
+            <div className="section-header">
+              <span>04 — EDUCATION</span>
+              <h2>
+                My academic
+                <em> journey.</em>
+              </h2>
+            </div>
+
+            <div className="timeline">
+
+              <div className="timeline-item">
+
+                <div className="timeline-year">
+                  2023 — 2027
+                </div>
+
+                <div className="timeline-dot"></div>
+
+                <div className="timeline-content">
+                  <span>BE • COMPUTER SCIENCE</span>
+
+                  <h3>
+                    Bachelor of Engineering —
+                    Computer Science &amp; Data Science
+                  </h3>
+
+                  <p>
+                    New Horizon College of Engineering
+                  </p>
+
+                  <small>
+                    Visvesvaraya Technological University (VTU)
+                    &nbsp; • &nbsp; CGPA: 8.95
+                  </small>
+                </div>
+
+              </div>
+
+              <div className="timeline-item">
+
+                <div className="timeline-year">
+                  2021 — 2023
+                </div>
+
+                <div className="timeline-dot"></div>
+
+                <div className="timeline-content">
+                  <span>PUC • XII</span>
+
+                  <h3>
+                    Sri Vidyaniketan PU College
+                  </h3>
+
+                  <small>
+                    Percentage: 92.16%
+                  </small>
+                </div>
+
+              </div>
+
+              <div className="timeline-item">
+
+                <div className="timeline-year">
+                  2020 — 2021
+                </div>
+
+                <div className="timeline-dot"></div>
+
+                <div className="timeline-content">
+                  <span>SSLC • X</span>
+
+                  <h3>
+                    Shree Krishna Devaraya High School
+                  </h3>
+
+                  <small>
+                    Percentage: 87.52%
+                  </small>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+
+        {/* ================= CERTIFICATIONS ================= */}
+        <section
+          id="certifications"
+          className="section certifications-section"
+        >
+          <div className="section-container">
+
+            <div className="section-header">
+              <span>05 — CERTIFICATIONS</span>
+              <h2>
+                Learning beyond
+                <em> the classroom.</em>
+              </h2>
+            </div>
+
+            <div className="certifications-grid">
+
+              {certifications.map((certificate, index) => (
+                <div
+                  className="certificate-card"
+                  key={certificate.title}
+                >
+
+                  <div className="certificate-top">
+                    <span>
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+
+                    <span>
+                      {certificate.year}
+                    </span>
+                  </div>
+
+                  <div className="certificate-icon">
+                    ✓
+                  </div>
+
+                  <h3>
+                    {certificate.title}
+                  </h3>
+
+                  {certificate.subtitle && (
+                    <p>{certificate.subtitle}</p>
+                  )}
+
+                </div>
+              ))}
+
+            </div>
+
+          </div>
+        </section>
+
+        {/* ================= CONTACT ================= */}
+        <section id="contact" className="contact-section">
+          <div className="contact-container">
+
+            <div className="contact-label">
+              06 — CONTACT
+            </div>
+
+            <h2>
+              Let's build something
+              <span> meaningful.</span>
+            </h2>
+
+            <p>
+              Have an opportunity, project, or simply want to connect?
+              I'd love to hear from you.
+            </p>
+
+            <a
+              href={`mailto:${email}`}
+              className="contact-email"
+            >
+              {email}
+              <span>↗</span>
+            </a>
+
+            <div className="contact-socials">
+
+              <a
+                href={linkedinUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn ↗
+              </a>
+
+              <a
+                href={githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub ↗
+              </a>
+
+              <a
+                href={leetcodeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LeetCode ↗
+              </a>
+
+              <a href={`mailto:${email}`}>
+                Email ↗
+              </a>
+
+            </div>
+
+          </div>
+        </section>
+
+      </main>
+
+      {/* ================= FOOTER ================= */}
+      <footer className="footer">
+
+        <div className="footer-container">
+
+          <div className="footer-logo">
+            Bhoomika<span>.</span>
+          </div>
 
           <p>
-            Developer • AI/ML Enthusiast
+            Designed &amp; built with React.js
           </p>
 
-        </div>
-
-      </section>
-
-
-      {/* ================= ABOUT ================= */}
-      <section id="about" className="section">
-
-        <p className="section-label">
-          ABOUT ME
-        </p>
-
-        <h2 className="section-title">
-          Building solutions with <span>technology</span>
-        </h2>
-
-        <div className="about-container">
-
-          <div className="about-text">
-
-            <p>
-              I am a Computer Science and Data Science student at
-              New Horizon College of Engineering, with a strong
-              interest in software development, programming,
-              databases, web technologies and emerging technologies.
-            </p>
-
-            <p>
-              I enjoy developing academic and personal projects
-              that combine software development with practical
-              problem-solving.
-            </p>
-
-            <p>
-              I am continuously learning new technologies and
-              improving my programming, development and
-              problem-solving skills.
-            </p>
-
-          </div>
-
-
-          <div className="stats-container">
-
-            <div className="stat-card">
-              <h3>8.95</h3>
-              <p>CGPA</p>
-            </div>
-
-            <div className="stat-card">
-              <h3>4+</h3>
-              <p>Projects</p>
-            </div>
-
-            <div className="stat-card">
-              <h3>2027</h3>
-              <p>Graduation</p>
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-      {/* ================= SKILLS ================= */}
-      <section id="skills" className="section dark-section">
-
-        <p className="section-label">
-          MY EXPERTISE
-        </p>
-
-        <h2 className="section-title">
-          Technical <span>Skills</span>
-        </h2>
-
-
-        <div className="skills-grid">
-
-          <div className="skill-card">
-
-            <div className="skill-icon">
-              &lt;/&gt;
-            </div>
-
-            <h3>Programming Languages</h3>
-
-            <div className="skill-tags">
-              <span>Java</span>
-              <span>C</span>
-              <span>Python</span>
-            </div>
-
-          </div>
-
-
-          <div className="skill-card">
-
-            <div className="skill-icon">
-              WEB
-            </div>
-
-            <h3>Frontend Technologies</h3>
-
-            <div className="skill-tags">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>React.js</span>
-              
-            </div>
-
-          </div>
-
-
-          <div className="skill-card">
-
-            <div className="skill-icon">
-              API
-            </div>
-
-            <h3>Backend Technologies</h3>
-
-            <div className="skill-tags">
-              <span>Spring Boot</span>
-              <span>FastAPI</span>
-            </div>
-
-          </div>
-
-
-          <div className="skill-card">
-
-            <div className="skill-icon">
-              AI
-            </div>
-
-            <h3>Machine Learning</h3>
-
-            <div className="skill-tags">
-              <span>Machine Learning</span>
-              <span>Pandas</span>
-              <span>Numpy</span>
-              <span>Scikit-learn</span>
-            </div>
-
-          </div>
-
-
-          <div className="skill-card">
-
-            <div className="skill-icon">
-              DB
-            </div>
-
-            <h3>Databases</h3>
-
-            <div className="skill-tags">
-              <span>SQL</span>
-              <span>PostgreSQL</span>
-              <span>MySQL</span>
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-      {/* ================= PROJECTS ================= */}
-      <section id="projects" className="section">
-
-        <p className="section-label">
-          MY WORK
-        </p>
-
-        <h2 className="section-title">
-          Featured <span>Projects</span>
-        </h2>
-
-
-        <div className="projects-grid">
-
-
-          {/* PROJECT 1 */}
-          <div className="project-card">
-
-            <div className="project-top">
-              <span className="project-number">
-                01
-              </span>
-
-              <span className="project-category">
-                AI / ML
-              </span>
-            </div>
-
-            <h3>
-              AgriSmart
-            </h3>
-
-            <p>
-              AI/ML-powered Smart Farming and Agricultural Decision
-              Support System for crop recommendation, mandi price
-              analysis, MSP comparison, weather insights, price
-              prediction and profit estimation.
-            </p>
-
-            <div className="project-tech">
-
-              <span>React.js</span>
-              <span>FastAPI</span>
-              <span>Python</span>
-              <span>PostgreSQL</span>
-              <span>Scikit-learn</span>
-
-            </div>
-
-            <a href="#" className="project-link">
-              View Project →
+          <div className="footer-links">
+
+            <a href="#home">Back to top ↑</a>
+
+            <a
+              href={githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub ↗
             </a>
 
           </div>
 
-
-          {/* PROJECT 2 */}
-          <div className="project-card">
-
-            <div className="project-top">
-
-              <span className="project-number">
-                02
-              </span>
-
-              <span className="project-category">
-                BACKEND
-              </span>
-
-            </div>
-
-            <h3>
-              Microservices Authentication System
-            </h3>
-
-            <p>
-              Secure authentication system featuring JWT,
-              Role-Based Access Control, QR-code based login
-              and Redis-backed session management.
-            </p>
-
-            <div className="project-tech">
-
-              <span>Java</span>
-              <span>Spring Boot</span>
-              <span>Spring Security</span>
-              <span>JWT</span>
-              <span>Redis</span>
-
-            </div>
-
-            <a href="#" className="project-link">
-              View Project →
-            </a>
-
-          </div>
-
-
-          {/* PROJECT 3 */}
-          <div className="project-card">
-
-            <div className="project-top">
-
-              <span className="project-number">
-                03
-              </span>
-
-              <span className="project-category">
-                FULL STACK
-              </span>
-
-            </div>
-
-            <h3>
-              Education Suggestion Website
-            </h3>
-
-            <p>
-              Full-stack web application designed to help
-              post-2nd PUC students explore degree programs,
-              college options and career paths.
-            </p>
-
-            <div className="project-tech">
-
-              <span>AngularJS</span>
-              <span>Spring Boot</span>
-              <span>Java</span>
-              <span>PostgreSQL</span>
-
-            </div>
-
-            <a href="#" className="project-link">
-              View Project →
-            </a>
-
-          </div>
-
-
-          {/* PROJECT 4 */}
-          <div className="project-card">
-
-            <div className="project-top">
-
-              <span className="project-number">
-                04
-              </span>
-
-              <span className="project-category">
-                AI / ML
-              </span>
-
-            </div>
-
-            <h3>
-              AgriSense
-            </h3>
-
-            <p>
-              AI-powered agriculture platform integrating
-              machine learning models with FastAPI for crop
-              disease detection and fertilizer recommendations.
-            </p>
-
-            <div className="project-tech">
-
-              <span>React.js</span>
-              <span>FastAPI</span>
-              <span>Python</span>
-              <span>Machine Learning</span>
-
-            </div>
-
-            <a href="#" className="project-link">
-              View Project →
-            </a>
-
-          </div>
-
-
         </div>
 
-      </section>
-
-
-      {/* ================= EDUCATION ================= */}
-      <section id="education" className="section dark-section">
-
-        <p className="section-label">
-          MY JOURNEY
-        </p>
-
-        <h2 className="section-title">
-          Education
-        </h2>
-
-
-        <div className="timeline">
-
-
-          <div className="timeline-item">
-
-            <div className="timeline-dot"></div>
-
-            <div className="timeline-content">
-
-              <span className="timeline-date">
-                2023 – 2027
-              </span>
-
-              <h3>
-                Bachelor of Engineering
-              </h3>
-
-              <h4>
-                Computer Science and Data Science
-              </h4>
-
-              <p>
-                New Horizon College of Engineering
-              </p>
-
-              <strong>
-                CGPA: 8.95
-              </strong>
-
-            </div>
-
-          </div>
-
-
-          <div className="timeline-item">
-
-            <div className="timeline-dot"></div>
-
-            <div className="timeline-content">
-
-              <span className="timeline-date">
-                2021 – 2023
-              </span>
-
-              <h3>
-                XII Standard
-              </h3>
-
-              <p>
-                Sri Vidyaniketan PU College
-              </p>
-
-              <strong>
-                92.16%
-              </strong>
-
-            </div>
-
-          </div>
-
-
-          <div className="timeline-item">
-
-            <div className="timeline-dot"></div>
-
-            <div className="timeline-content">
-
-              <span className="timeline-date">
-                2020 – 2021
-              </span>
-
-              <h3>
-                X Standard
-              </h3>
-
-              <p>
-                Shree Krishna Devaraya High School
-              </p>
-
-              <strong>
-                87.52%
-              </strong>
-
-            </div>
-
-          </div>
-
-
-        </div>
-
-      </section>
-
-
-      {/* ================= CERTIFICATIONS ================= */}
-      <section id="certifications" className="section">
-
-        <p className="section-label">
-          ACHIEVEMENTS
-        </p>
-
-        <h2 className="section-title">
-          Certifications & <span>Achievements</span>
-        </h2>
-
-
-        <div className="certifications-list">
-
-
-          <div className="certificate-card">
-
-            <span className="certificate-number">
-              01
-            </span>
-
-            <div>
-
-              <h3>
-                Top 100 Finalist
-              </h3>
-
-              <p>
-                Capgemini Exceller AgentifAI Buildathon — 2026
-              </p>
-
-            </div>
-
-          </div>
-
-
-          <div className="certificate-card">
-
-            <span className="certificate-number">
-              02
-            </span>
-
-            <div>
-
-              <h3>
-                SAP Certified
-              </h3>
-
-              <p>
-                Data Analyst – SAP Analytics Cloud — 2026
-              </p>
-
-            </div>
-
-          </div>
-
-
-          <div className="certificate-card">
-
-            <span className="certificate-number">
-              03
-            </span>
-
-            <div>
-
-              <h3>
-                Database Structures and Management with MySQL
-              </h3>
-
-              <p>
-                Meta — Coursera — 2025
-              </p>
-
-            </div>
-
-          </div>
-
-
-          <div className="certificate-card">
-
-            <span className="certificate-number">
-              04
-            </span>
-
-            <div>
-
-              <h3>
-                Generative AI Landscape
-              </h3>
-
-              <p>
-                Infosys Springboard — 2026
-              </p>
-
-            </div>
-
-          </div>
-
-
-          <div className="certificate-card">
-
-            <span className="certificate-number">
-              05
-            </span>
-
-            <div>
-
-              <h3>
-                Introduction to R
-              </h3>
-
-              <p>
-                Infosys Springboard — 2026
-              </p>
-
-            </div>
-
-          </div>
-
-
-        </div>
-
-      </section>
-
-
-      {/* ================= CONTACT ================= */}
-      <section id="contact" className="contact-section">
-
-        <p className="section-label">
-          GET IN TOUCH
-        </p>
-
-        <h2>
-          Let's build something <span>amazing.</span>
-        </h2>
-
-        <p className="contact-description">
-          I'm open to opportunities, collaborations and
-          interesting technology projects.
-        </p>
-
-
-        <div className="contact-buttons">
-
-          <a
-            href="mailto:bhoomikasm0205@gmail.com"
-            className="btn primary-btn"
-          >
-            Email Me
-          </a>
-
-          <a
-            href="#"
-            className="btn secondary-btn"
-          >
-            LinkedIn
-          </a>
-
-          <a
-            href="#"
-            className="btn secondary-btn"
-          >
-            GitHub
-          </a>
-
-        </div>
-
-
-        <p className="copyright">
-          © 2026 Bhoomika SM. All rights reserved.
-        </p>
-
-      </section>
+      </footer>
 
     </div>
   );
