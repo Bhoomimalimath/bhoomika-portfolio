@@ -6,23 +6,42 @@ function App() {
   const linkedinUrl =
     "https://www.linkedin.com/in/bhoomika-sm-175655308/";
 
-  const leetcodeUrl = "https://leetcode.com/u/bhoomikamalimath/";
+  const leetcodeUrl =
+    "https://leetcode.com/u/bhoomikamalimath/";
 
   const email = "bhoomikasm0205@gmail.com";
 
-  const skills = [
-    "Java",
-    "C",
-    "Python",
-    "HTML",
-    "CSS",
-    "React.js",
-    "Spring Boot",
-    "FastAPI",
-    "SQL",
-    "PostgreSQL",
-    "Machine Learning",
-    "Scikit-learn",
+  const skillCategories = [
+    {
+      title: "Programming Languages",
+      description:
+        "Core languages I use for software development.",
+      skills: ["Java", "C", "Python"],
+    },
+    {
+      title: "Frontend Technologies",
+      description:
+        "Building responsive and interactive user interfaces.",
+      skills: ["HTML", "CSS", "React.js"],
+    },
+    {
+      title: "Backend Technologies",
+      description:
+        "Developing scalable server-side applications.",
+      skills: ["Spring Boot"],
+    },
+    {
+      title: "Machine Learning / AI",
+      description:
+        "Applying machine learning techniques to solve real-world problems.",
+      skills: ["ML Concept", "Scikit-Learn"],
+    },
+    {
+      title: "Databases",
+      description:
+        "Working with relational databases for data storage and management.",
+      skills: ["SQL", "PostgreSQL"],
+    },
   ];
 
   const projects = [
@@ -107,11 +126,13 @@ function App() {
       subtitle: "Coursera",
     },
     {
-      title: "Generative AI Landscape – Infosys Springboard",
+      title:
+        "Generative AI Landscape – Infosys Springboard",
       year: "2026",
     },
     {
-      title: "Introduction to R – Infosys Springboard",
+      title:
+        "Introduction to R – Infosys Springboard",
       year: "2026",
     },
   ];
@@ -126,8 +147,10 @@ function App() {
 
           <a href="#home" className="logo">
             <span className="logo-mark">B</span>
+
             <span>
-              Bhoomika<span className="logo-accent">.</span>
+              Bhoomika
+              <span className="logo-accent">.</span>
             </span>
           </a>
 
@@ -137,7 +160,9 @@ function App() {
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#education">Education</a>
-            <a href="#certifications">Certifications</a>
+            <a href="#certifications">
+              Certifications
+            </a>
             <a href="#contact">Contact</a>
           </nav>
 
@@ -156,6 +181,7 @@ function App() {
         {/* ================= HERO ================= */}
 
         <section id="home" className="hero">
+
           <div className="hero-container">
 
             <div className="hero-content">
@@ -208,7 +234,9 @@ function App() {
                   rel="noopener noreferrer"
                   className="social-link"
                 >
-                  <span className="social-icon">in</span>
+                  <span className="social-icon">
+                    in
+                  </span>
                   LinkedIn
                 </a>
 
@@ -218,7 +246,9 @@ function App() {
                   rel="noopener noreferrer"
                   className="social-link"
                 >
-                  <span className="social-icon">⌘</span>
+                  <span className="social-icon">
+                    ⌘
+                  </span>
                   GitHub
                 </a>
 
@@ -228,7 +258,9 @@ function App() {
                   rel="noopener noreferrer"
                   className="social-link"
                 >
-                  <span className="social-icon">&lt;/&gt;</span>
+                  <span className="social-icon">
+                    &lt;/&gt;
+                  </span>
                   LeetCode
                 </a>
 
@@ -291,6 +323,7 @@ function App() {
 
               <div className="floating-card floating-card-one">
                 <span>⌘</span>
+
                 <div>
                   <strong>Software</strong>
                   <small>Development</small>
@@ -299,6 +332,7 @@ function App() {
 
               <div className="floating-card floating-card-two">
                 <span>AI</span>
+
                 <div>
                   <strong>Machine</strong>
                   <small>Learning</small>
@@ -318,16 +352,22 @@ function App() {
 
         {/* ================= ABOUT ================= */}
 
-        <section id="about" className="section about-section">
+        <section
+          id="about"
+          className="section about-section"
+        >
+
           <div className="section-container">
 
             <div className="section-header">
+
               <span>01 — ABOUT</span>
 
               <h2>
                 Turning ideas into
                 <em> useful solutions.</em>
               </h2>
+
             </div>
 
             <div className="about-grid">
@@ -335,24 +375,25 @@ function App() {
               <div className="about-main">
 
                 <p className="about-lead">
-                  I am a Computer Science and Data Science student
-                  interested in software development, machine learning,
-                  databases, and modern web technologies.
+                  I am a Computer Science and Data Science
+                  student interested in software development,
+                  machine learning, databases, and modern web
+                  technologies.
                 </p>
 
                 <p>
-                  I enjoy building real-world applications that combine
-                  software engineering and intelligent technologies to
-                  solve practical problems. My projects range from
-                  full-stack web applications to AI-powered agricultural
-                  solutions.
+                  I enjoy building real-world applications that
+                  combine software engineering and intelligent
+                  technologies to solve practical problems. My
+                  projects range from full-stack web applications
+                  to AI-powered agricultural solutions.
                 </p>
 
                 <p>
-                  I am continuously improving my programming, problem
-                  solving, and development skills while exploring new
-                  technologies and building projects that have practical
-                  value.
+                  I am continuously improving my programming,
+                  problem solving, and development skills while
+                  exploring new technologies and building projects
+                  that have practical value.
                 </p>
 
               </div>
@@ -360,36 +401,52 @@ function App() {
               <div className="about-side">
 
                 <div className="about-info">
+
                   <span>01</span>
 
                   <div>
-                    <strong>Software Development</strong>
+                    <strong>
+                      Software Development
+                    </strong>
+
                     <p>
-                      Building scalable and practical applications.
+                      Building scalable and practical
+                      applications.
                     </p>
                   </div>
+
                 </div>
 
                 <div className="about-info">
+
                   <span>02</span>
 
                   <div>
                     <strong>Data &amp; AI</strong>
+
                     <p>
-                      Exploring machine learning and data-driven solutions.
+                      Exploring machine learning and
+                      data-driven solutions.
                     </p>
                   </div>
+
                 </div>
 
                 <div className="about-info">
+
                   <span>03</span>
 
                   <div>
-                    <strong>Continuous Learning</strong>
+                    <strong>
+                      Continuous Learning
+                    </strong>
+
                     <p>
-                      Improving through projects and problem solving.
+                      Improving through projects and
+                      problem solving.
                     </p>
                   </div>
+
                 </div>
 
               </div>
@@ -397,62 +454,135 @@ function App() {
             </div>
 
           </div>
+
         </section>
+
 
         {/* ================= SKILLS ================= */}
 
-        <section id="skills" className="section skills-section">
+        <section
+          id="skills"
+          className="section skills-section"
+        >
+
           <div className="section-container">
 
-            <div className="section-header">
-              <span>02 — SKILLS</span>
+            <div className="skills-heading">
+
+              <div className="skills-label">
+                <span></span>
+                02 — SKILLS
+              </div>
 
               <h2>
-                Tools I use to
-                <em> build things.</em>
+                Technical <em>skills.</em>
               </h2>
+
+              <p>
+                Technologies and tools I use to build real-world
+                applications and solve practical problems.
+              </p>
+
             </div>
 
             <div className="skills-grid">
 
-              {skills.map((skill, index) => (
-                <div
-                  className="skill-card"
-                  key={skill}
-                >
-                  <span className="skill-number">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
+              {skillCategories.map(
+                (category, index) => (
 
-                  <span className="skill-name">
-                    {skill}
-                  </span>
+                  <div
+                    className={`skill-category skill-category-${index + 1}`}
+                    key={category.title}
+                  >
 
-                  <span className="skill-arrow">
-                    ↗
-                  </span>
-                </div>
-              ))}
+                    <div className="skill-card-top">
+
+                      <div className="skill-index">
+                        {String(index + 1).padStart(
+                          2,
+                          "0"
+                        )}
+                      </div>
+
+                      <div className="skill-icon">
+
+                        {index === 0 && "</>"}
+
+                        {index === 1 && "▣"}
+
+                        {index === 2 && "▤"}
+
+                        {index === 3 && "✦"}
+
+                        {index === 4 && "◉"}
+
+                      </div>
+
+                      <span className="skill-card-arrow">
+                        ↗
+                      </span>
+
+                    </div>
+
+                    <div className="skill-card-content">
+
+                      <h3>
+                        {category.title}
+                      </h3>
+
+                      <p>
+                        {category.description}
+                      </p>
+
+                    </div>
+
+                    <div className="skill-items">
+
+                      {category.skills.map(
+                        (skill) => (
+                          <span
+                            className="skill-item"
+                            key={skill}
+                          >
+                            {skill}
+                          </span>
+                        )
+                      )}
+
+                    </div>
+
+                  </div>
+
+                )
+              )}
 
             </div>
 
           </div>
+
         </section>
+
 
         {/* ================= PROJECTS ================= */}
 
-        <section id="projects" className="section projects-section">
+        <section
+          id="projects"
+          className="section projects-section"
+        >
+
           <div className="section-container">
 
             <div className="section-header projects-header">
 
               <div>
+
                 <span>03 — PROJECTS</span>
 
                 <h2>
                   Things I've
                   <em> built.</em>
                 </h2>
+
               </div>
 
               <p>
@@ -465,6 +595,7 @@ function App() {
             <div className="projects-list">
 
               {projects.map((project) => (
+
                 <a
                   href={project.github}
                   target="_blank"
@@ -501,36 +632,47 @@ function App() {
 
                     <div className="technology-list">
 
-                      {project.technologies.map((tech) => (
-                        <span key={tech}>
-                          {tech}
-                        </span>
-                      ))}
+                      {project.technologies.map(
+                        (tech) => (
+                          <span key={tech}>
+                            {tech}
+                          </span>
+                        )
+                      )}
 
                     </div>
 
                   </div>
 
                 </a>
+
               ))}
 
             </div>
 
           </div>
+
         </section>
+
 
         {/* ================= EDUCATION ================= */}
 
-        <section id="education" className="section education-section">
+        <section
+          id="education"
+          className="section education-section"
+        >
+
           <div className="section-container">
 
             <div className="section-header">
+
               <span>04 — EDUCATION</span>
 
               <h2>
                 My academic
                 <em> journey.</em>
               </h2>
+
             </div>
 
             <div className="timeline">
@@ -545,7 +687,9 @@ function App() {
 
                 <div className="timeline-content">
 
-                  <span>BE • COMPUTER SCIENCE</span>
+                  <span>
+                    BE • COMPUTER SCIENCE
+                  </span>
 
                   <h3>
                     Bachelor of Engineering —
@@ -557,13 +701,15 @@ function App() {
                   </p>
 
                   <small>
-                    Visvesvaraya Technological University (VTU)
+                    Visvesvaraya Technological
+                    University (VTU)
                     &nbsp; • &nbsp; CGPA: 8.95
                   </small>
 
                 </div>
 
               </div>
+
 
               <div className="timeline-item">
 
@@ -588,6 +734,7 @@ function App() {
                 </div>
 
               </div>
+
 
               <div className="timeline-item">
 
@@ -616,7 +763,9 @@ function App() {
             </div>
 
           </div>
+
         </section>
+
 
         {/* ================= CERTIFICATIONS ================= */}
 
@@ -624,6 +773,7 @@ function App() {
           id="certifications"
           className="section certifications-section"
         >
+
           <div className="section-container">
 
             <div className="section-header">
@@ -639,49 +789,62 @@ function App() {
 
             <div className="certifications-grid">
 
-              {certifications.map((certificate, index) => (
-                <div
-                  className="certificate-card"
-                  key={certificate.title}
-                >
+              {certifications.map(
+                (certificate, index) => (
 
-                  <div className="certificate-top">
+                  <div
+                    className="certificate-card"
+                    key={certificate.title}
+                  >
 
-                    <span>
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
+                    <div className="certificate-top">
 
-                    <span>
-                      {certificate.year}
-                    </span>
+                      <span>
+                        {String(index + 1).padStart(
+                          2,
+                          "0"
+                        )}
+                      </span>
+
+                      <span>
+                        {certificate.year}
+                      </span>
+
+                    </div>
+
+                    <div className="certificate-icon">
+                      ✓
+                    </div>
+
+                    <h3>
+                      {certificate.title}
+                    </h3>
+
+                    {certificate.subtitle && (
+                      <p>
+                        {certificate.subtitle}
+                      </p>
+                    )}
 
                   </div>
 
-                  <div className="certificate-icon">
-                    ✓
-                  </div>
-
-                  <h3>
-                    {certificate.title}
-                  </h3>
-
-                  {certificate.subtitle && (
-                    <p>
-                      {certificate.subtitle}
-                    </p>
-                  )}
-
-                </div>
-              ))}
+                )
+              )}
 
             </div>
 
           </div>
+
         </section>
+
 
         {/* ================= CONTACT ================= */}
 
-        <section id="contact" className="contact-section">
+        <section
+          id="contact"
+          className="contact-section"
+        >
+
           <div className="contact-container">
 
             <div className="contact-label">
@@ -694,8 +857,8 @@ function App() {
             </h2>
 
             <p>
-              Have an opportunity, project, or simply want to connect?
-              I'd love to hear from you.
+              Have an opportunity, project, or simply want
+              to connect? I'd love to hear from you.
             </p>
 
             <a
@@ -739,9 +902,11 @@ function App() {
             </div>
 
           </div>
+
         </section>
 
       </main>
+
 
       {/* ================= FOOTER ================= */}
 
