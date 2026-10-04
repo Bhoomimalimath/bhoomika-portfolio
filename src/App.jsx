@@ -2,9 +2,12 @@ import "./App.css";
 
 function App() {
   const githubUrl = "https://github.com/Bhoomimalimath";
+
   const linkedinUrl =
     "https://www.linkedin.com/in/bhoomika-sm-175655308/";
+
   const leetcodeUrl = "https://leetcode.com/u/bhoomikamalimath/";
+
   const email = "bhoomikasm0205@gmail.com";
 
   const skills = [
@@ -27,6 +30,7 @@ function App() {
       number: "01",
       title: "AgriSmart",
       category: "AI / ML • Full Stack",
+      github: "https://github.com/Bhoomimalimath",
       description:
         "An AI/ML-based smart farming and agricultural decision support platform that helps farmers with crop recommendations, weather insights, mandi price analysis, MSP comparison, price prediction, and profit estimation.",
       technologies: [
@@ -37,10 +41,12 @@ function App() {
         "Scikit-learn",
       ],
     },
+
     {
       number: "02",
       title: "Microservices Authentication System",
       category: "Backend • Security",
+      github: "https://github.com/Bhoomimalimath",
       description:
         "A secure microservices authentication system implementing JWT authentication, role-based access control, QR login, token validation, and Redis-based session management.",
       technologies: [
@@ -51,10 +57,12 @@ function App() {
         "Redis",
       ],
     },
+
     {
       number: "03",
       title: "Education Suggestion Website",
       category: "Web Development",
+      github: "https://github.com/Bhoomimalimath",
       description:
         "A web application that provides degree, college, and career guidance to students after 2nd PUC based on their interests and academic background.",
       technologies: [
@@ -64,10 +72,12 @@ function App() {
         "PostgreSQL",
       ],
     },
+
     {
       number: "04",
       title: "AgriSense",
       category: "AI / ML",
+      github: "https://github.com/Bhoomimalimath",
       description:
         "An AI-powered agriculture application for crop disease detection and fertilizer recommendation using machine learning techniques.",
       technologies: [
@@ -110,12 +120,15 @@ function App() {
     <div className="portfolio">
 
       {/* ================= NAVBAR ================= */}
+
       <header className="navbar">
         <div className="nav-container">
 
           <a href="#home" className="logo">
             <span className="logo-mark">B</span>
-            <span>Bhoomika<span className="logo-accent">.</span></span>
+            <span>
+              Bhoomika<span className="logo-accent">.</span>
+            </span>
           </a>
 
           <nav className="nav-links">
@@ -138,8 +151,9 @@ function App() {
         </div>
       </header>
 
-      {/* ================= HERO ================= */}
       <main>
+
+        {/* ================= HERO ================= */}
 
         <section id="home" className="hero">
           <div className="hero-container">
@@ -175,8 +189,6 @@ function App() {
                   View My Work
                   <span>↗</span>
                 </a>
-
-               
 
               </div>
 
@@ -225,6 +237,7 @@ function App() {
             </div>
 
             {/* HERO PROFILE CARD */}
+
             <div className="hero-visual">
 
               <div className="hero-glow"></div>
@@ -300,14 +313,17 @@ function App() {
             <span></span>
             Scroll to explore
           </div>
+
         </section>
 
         {/* ================= ABOUT ================= */}
+
         <section id="about" className="section about-section">
           <div className="section-container">
 
             <div className="section-header">
               <span>01 — ABOUT</span>
+
               <h2>
                 Turning ideas into
                 <em> useful solutions.</em>
@@ -345,6 +361,7 @@ function App() {
 
                 <div className="about-info">
                   <span>01</span>
+
                   <div>
                     <strong>Software Development</strong>
                     <p>
@@ -355,6 +372,7 @@ function App() {
 
                 <div className="about-info">
                   <span>02</span>
+
                   <div>
                     <strong>Data &amp; AI</strong>
                     <p>
@@ -365,6 +383,7 @@ function App() {
 
                 <div className="about-info">
                   <span>03</span>
+
                   <div>
                     <strong>Continuous Learning</strong>
                     <p>
@@ -381,11 +400,13 @@ function App() {
         </section>
 
         {/* ================= SKILLS ================= */}
+
         <section id="skills" className="section skills-section">
           <div className="section-container">
 
             <div className="section-header">
               <span>02 — SKILLS</span>
+
               <h2>
                 Tools I use to
                 <em> build things.</em>
@@ -419,6 +440,7 @@ function App() {
         </section>
 
         {/* ================= PROJECTS ================= */}
+
         <section id="projects" className="section projects-section">
           <div className="section-container">
 
@@ -426,6 +448,7 @@ function App() {
 
               <div>
                 <span>03 — PROJECTS</span>
+
                 <h2>
                   Things I've
                   <em> built.</em>
@@ -442,12 +465,16 @@ function App() {
             <div className="projects-list">
 
               {projects.map((project) => (
-                <article
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="project-card"
                   key={project.number}
                 >
 
                   <div className="project-top">
+
                     <span className="project-number">
                       {project.number}
                     </span>
@@ -459,6 +486,7 @@ function App() {
                     <span className="project-arrow">
                       ↗
                     </span>
+
                   </div>
 
                   <div className="project-content">
@@ -483,7 +511,7 @@ function App() {
 
                   </div>
 
-                </article>
+                </a>
               ))}
 
             </div>
@@ -492,11 +520,13 @@ function App() {
         </section>
 
         {/* ================= EDUCATION ================= */}
+
         <section id="education" className="section education-section">
           <div className="section-container">
 
             <div className="section-header">
               <span>04 — EDUCATION</span>
+
               <h2>
                 My academic
                 <em> journey.</em>
@@ -514,6 +544,7 @@ function App() {
                 <div className="timeline-dot"></div>
 
                 <div className="timeline-content">
+
                   <span>BE • COMPUTER SCIENCE</span>
 
                   <h3>
@@ -529,6 +560,7 @@ function App() {
                     Visvesvaraya Technological University (VTU)
                     &nbsp; • &nbsp; CGPA: 8.95
                   </small>
+
                 </div>
 
               </div>
@@ -542,6 +574,7 @@ function App() {
                 <div className="timeline-dot"></div>
 
                 <div className="timeline-content">
+
                   <span>PUC • XII</span>
 
                   <h3>
@@ -551,6 +584,7 @@ function App() {
                   <small>
                     Percentage: 92.16%
                   </small>
+
                 </div>
 
               </div>
@@ -564,6 +598,7 @@ function App() {
                 <div className="timeline-dot"></div>
 
                 <div className="timeline-content">
+
                   <span>SSLC • X</span>
 
                   <h3>
@@ -573,6 +608,7 @@ function App() {
                   <small>
                     Percentage: 87.52%
                   </small>
+
                 </div>
 
               </div>
@@ -583,6 +619,7 @@ function App() {
         </section>
 
         {/* ================= CERTIFICATIONS ================= */}
+
         <section
           id="certifications"
           className="section certifications-section"
@@ -590,11 +627,14 @@ function App() {
           <div className="section-container">
 
             <div className="section-header">
+
               <span>05 — CERTIFICATIONS</span>
+
               <h2>
                 Learning beyond
                 <em> the classroom.</em>
               </h2>
+
             </div>
 
             <div className="certifications-grid">
@@ -606,6 +646,7 @@ function App() {
                 >
 
                   <div className="certificate-top">
+
                     <span>
                       {String(index + 1).padStart(2, "0")}
                     </span>
@@ -613,6 +654,7 @@ function App() {
                     <span>
                       {certificate.year}
                     </span>
+
                   </div>
 
                   <div className="certificate-icon">
@@ -624,7 +666,9 @@ function App() {
                   </h3>
 
                   {certificate.subtitle && (
-                    <p>{certificate.subtitle}</p>
+                    <p>
+                      {certificate.subtitle}
+                    </p>
                   )}
 
                 </div>
@@ -636,6 +680,7 @@ function App() {
         </section>
 
         {/* ================= CONTACT ================= */}
+
         <section id="contact" className="contact-section">
           <div className="contact-container">
 
@@ -699,6 +744,7 @@ function App() {
       </main>
 
       {/* ================= FOOTER ================= */}
+
       <footer className="footer">
 
         <div className="footer-container">
@@ -713,7 +759,9 @@ function App() {
 
           <div className="footer-links">
 
-            <a href="#home">Back to top ↑</a>
+            <a href="#home">
+              Back to top ↑
+            </a>
 
             <a
               href={githubUrl}
