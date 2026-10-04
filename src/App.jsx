@@ -243,7 +243,7 @@ function App() {
                 <h3>Bhoomika SM</h3>
 
                 <p>
-                  Developer • AI/ML Enthusiast
+                  Software Developer • Machine Learning
                 </p>
 
                 <div className="profile-divider"></div>
