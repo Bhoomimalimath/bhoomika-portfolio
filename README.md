@@ -1,19 +1,38 @@
 # Bhoomika SM - Portfolio
 
-🌐 **Live Portfolio:** https://bhoomika-portfolio-eight.vercel.app
-# React + Vite
+Computer Science and Data Science Student | Java | Python | React.js | Machine Learning
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## 🌐 Live Portfolio
 
-Currently, two official plugins are available:
+https://bhoomika-portfolio-eight.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 About
 
-## React Compiler
+This is my personal portfolio website showcasing my skills, projects, education, certifications, and resume.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Technologies
 
-## Expanding the Oxlint configuration
+- Java
+- Python
+- React.js
+- HTML
+- CSS
+- Spring Boot
+- FastAPI
+- PostgreSQL
+- Machine Learning
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 📂 Featured Projects
+
+- AgriSmart – AI/ML Smart Farming & Agricultural Decision Support System
+- Microservices Authentication System
+- Education Suggestion Website
+- AgriSense – Crop Disease Detection & Fertilizer Recommendation
+
+## 📄 Resume
+
+You can view my resume through the portfolio website.
+
+---
+
+⭐ Thank you for visiting my portfolio!
